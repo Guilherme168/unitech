@@ -12,6 +12,6 @@ servidor.use(bodyParser.urlencoded({ limit: '200mb', extended: true }));
 servidor.use(cors());
 servidor.use(express.json())
 
-
+adicionarRotas(servidor)
 
 servidor.listen(process.env.PORTA, () => console.log(`A APi subiu na porta: ${process.env.PORTA}`)) 
