@@ -1,0 +1,31 @@
+.cabecalho{
+
+    .principal{
+        display: flex;
+        flex-direction: column;
+
+        .superior{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #1A3541;
+            border-bottom: #fff 2px;
+            max-height: 8vh;
+        }
+
+        .inferior{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #172E38;
+            max-height: 5vh;
+            gap: 2vw;
+
+            h2{
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+
+}

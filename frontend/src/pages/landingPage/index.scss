@@ -1,0 +1,75 @@
+.landing-page{
+
+    .secao0{
+        background-image: url('/frontend/public/assets/images/conceito-de-hospedagem-de-sites-com-circuitos.jpg');
+        
+     .div-blur{
+        background-color: #000;
+        filter: blur(15px);
+     }
+
+     .texto-sec0{
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-size: 20vh;
+            color: #6BB6F3;
+            max-width: 30vw;
+            font-weight: bold;
+        }
+        p{
+            font-size: 10vh;
+            color: #fff;
+            min-width: 4vh;
+        }
+     }
+    }
+
+    .secao1{
+        display: flex;
+        flex-direction: column;
+        background-color: #1C1C1C;
+
+    h1{
+        font-size: 20vh;
+        color: #fff;
+        font-family: 'Inter';
+        font-weight: 600;
+    }
+    
+
+    .textura{
+        max-width: 100%;
+        opacity: 8%;
+    }    
+
+    .carrossel-cursos{
+        display: flex;
+        flex-direction: row;
+
+        img{
+            border-radius: 20px;
+        }
+    }
+    }
+
+    .secao2{
+        display: flex;
+        flex-direction: row;
+        background-color: #262626;
+
+        .textura{
+        max-width: 100%;
+        opacity: 8%;
+    }   
+
+       .gradiente{
+        border-top-right-radius: 34px;
+        border-bottom-right-radius: 34px;
+        left: 0px;
+       }
+
+    }
+
+}
