@@ -1,22 +1,24 @@
 .landing-page{
 
     .secao0{
-        background-image: url('/frontend/public/assets/images/conceito-de-hospedagem-de-sites-com-circuitos.jpg');
+        background-image: url('../../../public/assets/images/conceito-de-hospedagem-de-sites-com-circuitos.jpg') ;
+        height: 120vh;
         
      .div-blur{
         background-color: #000;
-        filter: blur(15px);
+        filter: blur(3px);
+        max-width: 48vw;
      }
 
      .texto-sec0{
         display: flex;
         flex-direction: column;
 
+
         h1{
-            font-size: 20vh;
+            font: 600 130px 'Arial';
             color: #6BB6F3;
-            max-width: 30vw;
-            font-weight: bold;
+            width: 48vw;
         }
         p{
             font-size: 10vh;
@@ -30,26 +32,32 @@
         display: flex;
         flex-direction: column;
         background-color: #1C1C1C;
+        align-items: center;
+        gap: 150px;
 
     h1{
-        font-size: 20vh;
-        color: #fff;
-        font-family: 'Inter';
-        font-weight: 600;
+       font: 500 35px 'Arial';
+       color: #D9D1D1;
+       max-width: 35vw;
     }
     
 
     .textura{
-        max-width: 100%;
+        width: 100vw;
+        height: 71vh;
         opacity: 8%;
+        position: absolute;
     }    
 
     .carrossel-cursos{
         display: flex;
         flex-direction: row;
+        gap: 48px;
 
         img{
             border-radius: 20px;
+            width: 13vw;
+            height: 47vh;
         }
     }
     }
@@ -72,4 +80,225 @@
 
     }
 
+     .secao3-Graduados{
+      
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         background-color: #1C4355;
+         height: 80vh;
+
+         .texto{
+            display: flex;
+            flex-direction: column;
+            background-color: #2E4853;
+            gap: 15px;
+            box-shadow: 1px 1px #000;
+            border-radius: 40px;
+            max-height: 35vh;
+            max-width: 30vw;
+
+            h1{
+                color: #fff;
+                font: 600 32px 'Arial';
+            }
+            p{
+                color: #fff;
+                font: 600 24px 'Arial';
+            }
+         }
+     }
+
+     .secao3-Tecnicos{
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         background-color: #1C365C;
+
+         
+        .texto{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 1px 1px #000;
+            background-color: #1E3557;
+            border-radius: 40px;
+
+
+            h1{
+                color: #fff;
+                font: 600 32px 'Arial';
+            }
+            p{
+                color: #fff;
+                font: 600 32px 'Arial';
+            }
+            .link{
+             color: #A3A3A3;
+             font-size: 3em;
+             font-weight: bold;
+             text-decoration: underline;
+            }
+       }
+    }
+
+    .secao4-Avaliacoes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       .avaliacoes{
+        display: flex;
+        flex-direction: column;
+
+        h1{
+          font-size: 20em;
+          color: #fff;
+          font-weight: bold;
+          max-width: 15vw;
+        }
+
+        .resenhas{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        .ana{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                font-size: 9em;
+                font-weight: bold;
+                color: #fff;
+            }
+            p{
+                color: #C7C7C7;
+                font-size: 6em;
+                font-weight: 200;
+            }
+            img{
+                border-radius: 15px;
+                width: 25vw;
+            }
+        }
+        
+         .valeria{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                font-size: 9em;
+                font-weight: bold;
+                color: #fff;
+            }
+            p{
+                color: #C7C7C7;
+                font-size: 6em;
+                font-weight: 200;
+            }
+            img{
+                border-radius: 15px;
+                width: 25vw;
+            }
+        }
+
+         .wagner{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                font-size: 9em;
+                font-weight: bold;
+                color: #fff;
+            }
+            p{
+                color: #C7C7C7;
+                font-size: 6em;
+                font-weight: 200;
+            }
+            img{
+                border-radius: 15px;
+                width: 25vw;
+            }
+         }
+        }
+       }
+    }
+
+    .secao4-part2{
+
+       display: flex;
+       flex-direction: row;
+       background-color: #000;
+       max-height: 20vh;
+
+       .fundo-laranja{
+        background-color: #DD6937;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        max-width: 11vw;
+        left: 0px;
+
+        img{
+            width:10vw;
+            position: relative;
+        }
+       }
+
+       .texto{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        h1{
+            color: #fff;
+            font-size: 11em;
+            font-weight: 600;
+        }
+
+        .grad-pos{
+          display: flex;
+          gap: 15px;
+       
+          .grad{
+            font-size: 6em;
+            color: #DD6937;
+            text-decoration: underline;
+          }
+          .pos{
+            font-size: 6em;
+            color: #377FDD;
+            text-decoration: underline;
+          }
+        }
+
+         .tec-livre{
+          display: flex;
+          gap: 15px;
+
+          .tec{
+            font-size: 6em;
+            color: #86B9C7;
+            text-decoration: underline;
+          }
+          .livre{
+            font-size: 6em;
+            color: #DA8632;
+            text-decoration: underline;
+          }
+
+         }
+
+       }
+    }
 }

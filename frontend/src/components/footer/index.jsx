@@ -1,9 +1,6 @@
 import './index.scss'
-import {Link, UseNavigate} from 'react-router-dom'
 
 export default function Footer (){
-
-const navigate = UseNavigate()
 
 return(
  <div className='footer'>

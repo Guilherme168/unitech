@@ -1,5 +1,6 @@
 import './index.scss';
 import Cabecalho from '../../components/header';
+import Footer from '../../components/footer';
 
 function LandingPage() {
   return (
@@ -21,7 +22,7 @@ function LandingPage() {
 
      <section className='secao1'>
 
-        <img className='textura' src='/frontend/public/assets/images/textura.jpg'/> 
+        <img className='textura' src='/assets/images/textura.jpg'/> 
         <h1> Torne-se um(a) profissional competente no mercado com nossos melhores cursos! </h1>
 
        <div className='carrossel-cursos'> 
@@ -53,14 +54,14 @@ function LandingPage() {
    </div>
      </section>
 
-      <section className='secao3 - Graduados'> 
+      <section className='secao3-Graduados'> 
        <div className='texto'> 
         <h1> Já são mais de 50.000 profissionais formados por nós em todo o país! </h1> 
         <p> Venha fazer parte dessa história. Faça já sua inscrição aqui. </p>
        </div>
       </section>
 
-      <section className='secao3 - Tecnicos'> 
+      <section className='secao3-Tecnicos'> 
        <div className='texto'> 
         <h1> Mais de 10.000 técnicos formados em 2024! </h1> 
         <p> Se interessou? Dê uma olhada em nossos cursos técnicos e profissionalizantes no link abaixo: </p>
@@ -70,7 +71,7 @@ function LandingPage() {
        </div>
       </section>
 
-       <section className='secao4 - Avaliacoes'> 
+       <section className='secao4-Avaliacoes'> 
 
        <div className='avaliacoes'> 
 
@@ -82,7 +83,7 @@ function LandingPage() {
         <div className='ana'>
           <h1> Ana Paula </h1>
           <p> Análise e Desenvolvimento de Sistemas </p>
-           <img src='/frontend/public/images/mulher1.jpg'/>
+          <img src='/frontend/public/images/mulher1.jpg'/>
         </div>
 
         <div className='valeria'>
@@ -103,7 +104,7 @@ function LandingPage() {
 
        </section>
 
-       <section className='secao4 part2'>
+       <section className='secao4-part2'>
 
         <div className='fundo-laranja'>
            <img src='/frontend/public/images/secao4_imagem.png'/>
@@ -112,14 +113,14 @@ function LandingPage() {
         <div className='texto'> 
           <h1> Se interessou? Por que não dar uma olhada em nossos cursos? </h1>
    
-          <div className='grad&pos'>
-            <p> Graduação </p>
-            <p> Pós-Graduação </p>
+          <div className='grad-pos'>
+            <p className='grad'> Graduação </p>
+            <p className='pos'> Pós-Graduação </p>
           </div>
 
-          <div className='tec&livre'>
-            <p> Técnico </p>
-            <p> Livre </p>
+          <div className='tec-livre'>
+            <p className='tec'> Técnico </p>
+            <p className='livre'> Livre </p>
           </div>
 
         </div>
@@ -128,6 +129,7 @@ function LandingPage() {
 
     </main>
 
+  <Footer/>
 
     </div>
   );

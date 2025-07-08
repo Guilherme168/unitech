@@ -1,9 +1,6 @@
 import './index.scss'
-import {Link, UseNavigate} from 'react-router-dom'
 
 export default function Cabecalho (){
-
-const navigate = UseNavigate()
 
 return(
  <div className='cabecalho'>
@@ -14,7 +11,9 @@ return(
 
        <button className='contato'> ENTRE EM CONTATO </button>
        <img src='/assets/images/logo.png'/> 
-       <input> Busque um curso especifico </input>
+       <input type='text' placeholder='Busque um curso especifico'/>
+
+   </div>
 
    </div>
 
@@ -25,8 +24,6 @@ return(
    <h2> Cursos Técnicos </h2>
    <h2> Cursos Livres </h2>
    <h2> Bolsas </h2>
-
-   </div>
 
    </div>
     
