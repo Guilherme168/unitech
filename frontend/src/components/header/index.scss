@@ -21,7 +21,7 @@
           
             }
 
-            button{
+            .contato{
                 background-color: #1C3946;
                 border-radius: 10px;
                 border-style: none;
@@ -30,6 +30,10 @@
                 width: 12vw;
                 height: 4vh;
                 margin-top: 38px;
+            }
+
+            .contato:hover{
+                box-shadow: 1px 4px 1px  #000000;
             }
 
             input{
@@ -60,6 +64,11 @@
             h2{
                 color: #fff;
                 font: 700 23px 'Arial' ;
+            }
+
+            h2:hover{
+                text-decoration: underline;
+                color: #76C3A4;
             }
         }
 

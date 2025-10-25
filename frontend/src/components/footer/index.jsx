@@ -5,13 +5,14 @@ export default function Footer (){
 return(
  <div className='footer'>
 
+ <div className='principal'>
   <div className='superior'>
 
    <div className='coluna1'>
    <h2> CURSOS DISPONÍVEIS </h2>
    <p> Graduação </p>
    <p> Pós-Graduação </p>
-   <p> técnicos e Profissionalizantes </p>
+   <p> Técnicos e Profissionalizantes </p>
    <p> Livres </p>
    </div>
 
@@ -30,15 +31,15 @@ return(
 
    </div>
 
-   <br/>
+   <hr/>
 
    <div className='inferior'> 
-   <img src='/assets/images/logo.png'/> 
-   <img src='/assets/images/selo-MEC.png'/> 
+   <img className='logo'  src='/assets/images/logo.png'/> 
+   <img className='medalha' src='/assets/images/selo-MEC.png'/> 
    <h2> Desenvolvido por DevFox | @Todos os direitos reservados </h2>
    </div>
 
-    
+     </div>
  </div>
 
 

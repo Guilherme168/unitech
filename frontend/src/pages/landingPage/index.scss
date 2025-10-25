@@ -1,59 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 .landing-page{
 
     .secao0{
-        background-image: url('../../../public/assets/images/conceito-de-hospedagem-de-sites-com-circuitos.jpg') ;
-        height: 120vh;
-        
-     .div-blur{
-        background-color: #000;
-        filter: blur(3px);
-        max-width: 48vw;
-     }
+        display: flex;
+        background-image: url('../../../public/assets/images/conceito-de-hospedagem-de-sites-com-circuitos.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        height: 100vh;
+        align-items: center;
 
      .texto-sec0{
         display: flex;
         flex-direction: column;
-
+        margin-left: 16vh;
+        gap: 30px;
 
         h1{
-            font: 600 130px 'Arial';
+            font: 600 80px 'Arial';
             color: #6BB6F3;
-            width: 48vw;
+            width: 30vw;
         }
         p{
-            font-size: 10vh;
+            font-family: 'Arial';
+            font-size: 4vh;
             color: #fff;
-            min-width: 4vh;
+            width: 31vw;
+            font-weight: 600;
         }
      }
     }
 
     .secao1{
+        background-image: url('../../../public/assets/images/textura.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         background-color: #1C1C1C;
         align-items: center;
-        gap: 150px;
+        gap: 130px;
+        padding: 10vh;
 
     h1{
-       font: 500 35px 'Arial';
+       font: 500 35px 'Inter';
        color: #D9D1D1;
-       max-width: 35vw;
+       max-width: 34vw;
     }
-    
 
-    .textura{
-        width: 100vw;
-        height: 71vh;
-        opacity: 8%;
-        position: absolute;
-    }    
+      .bdtext{
+            p{
+                background-color: #242424;
+                border-radius: 30px;
+                display: none;
+
+            }
+        }
+
+        .adstext{
+            p{
+                background-color: #242424;
+                border-radius: 30px;
+                display: none;
+            }
+        }
+
+        .redestext{
+            p{
+                background-color: #242424;
+                border-radius: 30px;
+                display: none;
+            }
+        }
+
 
     .carrossel-cursos{
         display: flex;
         flex-direction: row;
-        gap: 48px;
+        gap: 7vw;
 
+        .bdtitle{
+            position: absolute;
+            color: #000;
+            top: 197%;
+            left: 25%;
+            font: 600 24px 'Inter';
+            display: none;
+        }
+
+         .adstitle{
+            position: absolute;
+            color: #000;
+            top: 197%;
+            left: 25%;
+            font: 600 24px 'Inter';
+            display: none;
+        }
+
+         .redestitle{
+            position: absolute;
+            color: #000;
+            top: 197%;
+            left: 25%;
+            font: 600 24px 'Inter';
+            display: none;
+        }
+
+        .bd:hover{
+             width: 14vw;
+             height: 50vh;
+        }
+
+       .ads:hover{
+             width: 14vw;
+             height: 50vh;
+        }
+       .redes:hover{
+             width: 14vw;
+             height: 50vh;
+        }
         img{
             border-radius: 20px;
             width: 13vw;
@@ -62,20 +131,60 @@
     }
     }
 
-    .secao2{
+     .secao2{
         display: flex;
         flex-direction: row;
-        background-color: #262626;
-
-        .textura{
-        max-width: 100%;
-        opacity: 8%;
-    }   
+        background-image: url('../../../public/assets/images/textura.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
 
        .gradiente{
         border-top-right-radius: 34px;
         border-bottom-right-radius: 34px;
-        left: 0px;
+        width: 37vw;
+        height: 80vh;
+        border: 3px 3px #940707;
+        
+       }
+
+       .img-sec2{
+        position: absolute;
+        left: 15%;
+        top: 262%;
+        width: 25vw;
+        height: 70vh;
+        border-radius: 34px;
+       }
+
+       .modalidades{
+            display: flex;
+            flex-direction: column;
+            padding-left: 15vw;
+            padding-top: 4vh;
+            gap: 15vh;
+
+            h1{
+                font: 600 46px "Arial";
+                width: 24vw;
+            }
+
+            .opcoes{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding-left: 2vw;
+
+                h3{
+                    font: 600 30px 'Arial';
+                }
+
+                hr{
+                    width: 16vw;
+                }
+            }
        }
 
     }
@@ -86,7 +195,8 @@
          flex-direction: row;
          justify-content: center;
          background-color: #1C4355;
-         height: 80vh;
+         padding-top: 6vh;
+         gap: 9vw;
 
          .texto{
             display: flex;
@@ -95,23 +205,34 @@
             gap: 15px;
             box-shadow: 1px 1px #000;
             border-radius: 40px;
-            max-height: 35vh;
-            max-width: 30vw;
+            max-height: 38vh;
+            max-width: 33vw;
+            justify-content: center;
+            gap: 50px;
+            padding: 3vw;
 
             h1{
                 color: #fff;
-                font: 600 32px 'Arial';
+                font: 600 40px 'Arial';
+                width: 26vw;
             }
             p{
                 color: #fff;
                 font: 600 24px 'Arial';
+                width: 22vw;
+               
             }
+         }
+
+         .graduanda{
+           width: 22vw;
+          
          }
      }
 
      .secao3-Tecnicos{
          display: flex;
-         flex-direction: row;
+         flex-direction: row-reverse;
          justify-content: center;
          background-color: #1C365C;
 
@@ -142,163 +263,4 @@
        }
     }
 
-    .secao4-Avaliacoes{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-       .avaliacoes{
-        display: flex;
-        flex-direction: column;
-
-        h1{
-          font-size: 20em;
-          color: #fff;
-          font-weight: bold;
-          max-width: 15vw;
-        }
-
-        .resenhas{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-        .ana{
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            justify-content: center;
-            align-items: center;
-
-            h1{
-                font-size: 9em;
-                font-weight: bold;
-                color: #fff;
-            }
-            p{
-                color: #C7C7C7;
-                font-size: 6em;
-                font-weight: 200;
-            }
-            img{
-                border-radius: 15px;
-                width: 25vw;
-            }
-        }
-        
-         .valeria{
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            justify-content: center;
-            align-items: center;
-
-            h1{
-                font-size: 9em;
-                font-weight: bold;
-                color: #fff;
-            }
-            p{
-                color: #C7C7C7;
-                font-size: 6em;
-                font-weight: 200;
-            }
-            img{
-                border-radius: 15px;
-                width: 25vw;
-            }
-        }
-
-         .wagner{
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            justify-content: center;
-            align-items: center;
-
-            h1{
-                font-size: 9em;
-                font-weight: bold;
-                color: #fff;
-            }
-            p{
-                color: #C7C7C7;
-                font-size: 6em;
-                font-weight: 200;
-            }
-            img{
-                border-radius: 15px;
-                width: 25vw;
-            }
-         }
-        }
-       }
-    }
-
-    .secao4-part2{
-
-       display: flex;
-       flex-direction: row;
-       background-color: #000;
-       max-height: 20vh;
-
-       .fundo-laranja{
-        background-color: #DD6937;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        max-width: 11vw;
-        left: 0px;
-
-        img{
-            width:10vw;
-            position: relative;
-        }
-       }
-
-       .texto{
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-
-        h1{
-            color: #fff;
-            font-size: 11em;
-            font-weight: 600;
-        }
-
-        .grad-pos{
-          display: flex;
-          gap: 15px;
-       
-          .grad{
-            font-size: 6em;
-            color: #DD6937;
-            text-decoration: underline;
-          }
-          .pos{
-            font-size: 6em;
-            color: #377FDD;
-            text-decoration: underline;
-          }
-        }
-
-         .tec-livre{
-          display: flex;
-          gap: 15px;
-
-          .tec{
-            font-size: 6em;
-            color: #86B9C7;
-            text-decoration: underline;
-          }
-          .livre{
-            font-size: 6em;
-            color: #DA8632;
-            text-decoration: underline;
-          }
-
-         }
-
-       }
-    }
 }
