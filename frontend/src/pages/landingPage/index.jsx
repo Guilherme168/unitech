@@ -96,6 +96,39 @@ function LandingPage() {
        <img className='tecnica' src='/assets/images/tecnicaa.png'/>
       </section>
 
+    <section className='secao4-Avaliacoes'> 
+
+       <div className='avaliacoes'> 
+
+       <h1>Realizando sonhos por todo o país há 20 anos</h1>
+       <hr/>
+
+       </div>
+
+       </section>
+
+ <section className='secao4-part2'>
+
+        <div className='fundo-laranja'>
+           <img src='/assets/images/secao4_imagem.png'/>
+        </div>
+
+        <div className='texto'> 
+          <h1> Se interessou? Por que não dar uma olhada em nossos cursos? </h1>
+   
+          <div className='grad-pos'>
+            <p className='grad'> Graduação </p>
+            <p className='pos'> Pós-Graduação </p>
+          </div>
+
+          <div className='tec-livre'>
+            <p className='tec'> Técnico </p>
+            <p className='livre'> Livre </p>
+          </div>
+
+        </div>
+
+       </section>
 
 
     </main>
