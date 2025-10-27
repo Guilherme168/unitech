@@ -13,7 +13,7 @@ function LandingPage() {
      
      <main> 
     
-    <Carousel interval={6000}>
+    <Carousel interval={5000}>
       <LandingSecao1/>
       <LandingSecao2/>
       <LandingSecao3/>
