@@ -4,36 +4,6 @@
 
 .landing-page{
 
-    .secao0{
-        display: flex;
-        background-image: url('../../../public/assets/images/conceito-de-hospedagem-de-sites-com-circuitos.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left;
-        height: 100vh;
-        align-items: center;
-
-     .texto-sec0{
-        display: flex;
-        flex-direction: column;
-        margin-left: 16vh;
-        gap: 30px;
-
-        h1{
-            font: 600 80px 'Arial';
-            color: #6BB6F3;
-            width: 30vw;
-        }
-        p{
-            font-family: 'Arial';
-            font-size: 4vh;
-            color: #fff;
-            width: 31vw;
-            font-weight: 600;
-        }
-     }
-    }
-
     .secao1{
         background-image: url('../../../public/assets/images/textura.jpg');
         background-repeat: no-repeat;
@@ -370,6 +340,27 @@
             text-decoration: underline;
            }
          }
+       }
+    }
+
+
+    //resposividade
+
+  @media (max-width: 1024px){
+       .landing-page{
+        width: 100vw;
+       }
+    }
+
+    @media (max-width: 768px){
+       .landing-page{
+        width: 100vw;
+       }
+    }
+
+      @media (max-width: 480px){
+       .landing-page{
+        width: 100vw;
        }
     }
 }

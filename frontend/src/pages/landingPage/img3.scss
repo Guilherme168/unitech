@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+    .secao03{
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(to left, #DD6937, #77381E);
+        height: 100vh;
+        width: 100vw;
+        gap: 15vw;
+        align-items: center;
+
+        .universidade{
+            width: 38vw;
+            height: 100vh;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .mulher{
+            width: 70vw;
+            height: 100vh;
+            position: absolute;
+            bottom: 0%;
+            left: 207%;
+        }
+
+        .texto{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            border-radius: 25px;
+            padding: 20px;
+
+            h1{
+                font: 600 70px 'Inter';
+                color: #ffffff;
+                width: 38vw;
+            }
+            p{
+                font: 600 42px 'Inter';
+                color: #ffffff;
+                width: 38vw;
+            }
+            h3{
+                font: 600 33px 'Inter';
+                color: #3DE8C6;
+            }
+        }
+        
+    }
+

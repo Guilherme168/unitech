@@ -1,6 +1,10 @@
 import './index.scss';
 import Cabecalho from '../../components/header';
 import Footer from '../../components/footer';
+import Carousel from '../../components/carrossel';
+import LandingSecao1 from './img1';
+import LandingSecao2 from './img2';
+import LandingSecao3 from './img3';
 
 function LandingPage() {
   return (
@@ -8,17 +12,14 @@ function LandingPage() {
      <Cabecalho/>
      
      <main> 
-     <section className='secao0'>
+    
+    <Carousel interval={6000}>
+      <LandingSecao1/>
+      <LandingSecao2/>
+      <LandingSecao3/>
+    </Carousel>
 
-        <div className='texto-sec0'>
-
-       <h1> Suba de nível na área da tecnologia! </h1>
-       <p> Avance para o próximo nível com nossos cursos de Graduação, Pós-Graduação, Técnicos e muito mais! </p>
-
-       </div>
-     </section>
-
-     <section className='secao1'>
+    <section className='secao1'>
 
         <h1> Torne-se um(a) profissional competente no mercado com nossos melhores cursos! </h1>
 
@@ -50,7 +51,7 @@ function LandingPage() {
 
      </section>
 
-     <section className='secao2'>
+    <section className='secao2'>
 
       <img className='gradiente' src='/assets/images/fundo_gradiente.jpg'/>
       <img className='img-sec2' src='/assets/images/img_sec2.jpg'/>
@@ -74,7 +75,7 @@ function LandingPage() {
      </section>
 
 
-     <section className='secao3-Graduados'> 
+    <section className='secao3-Graduados'> 
        <div className='texto'> 
         <h1> Já são mais de 50.000 profissionais formados por nós em todo o país! </h1> 
         <p> Venha fazer parte dessa história. Faça já sua inscrição aqui. </p>
@@ -85,7 +86,7 @@ function LandingPage() {
        
       </section>
 
-      <section className='secao3-Tecnicos'> 
+    <section className='secao3-Tecnicos'> 
        <div className='texto'> 
         <h1> Mais de 10.000 técnicos formados em 2024! </h1> 
         <p> Se interessou? Dê uma olhada em nossos cursos técnicos e profissionalizantes no link abaixo: </p>
@@ -107,7 +108,7 @@ function LandingPage() {
 
        </section>
 
- <section className='secao4-part2'>
+    <section className='secao4-part2'>
 
         <div className='fundo-laranja'>
            <img src='/assets/images/secao4_imagem.png'/>
