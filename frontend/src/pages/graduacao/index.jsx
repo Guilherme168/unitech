@@ -1,5 +1,7 @@
 import './index.scss';
 import Cabecalho from '../../components/header';
+import Footer from '../../components/footer';
+import Faq from '../../components/faq';
 
 function Graduacao() {
   return (
@@ -46,7 +48,11 @@ function Graduacao() {
 
     </section>
 
+    <Faq/>
+
     </main>
+
+    <Footer/>
 </div>
 
   );

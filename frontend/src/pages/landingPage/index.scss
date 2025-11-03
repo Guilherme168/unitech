@@ -4,14 +4,14 @@
 
 .landing-page{
 
+
     .secao1{
-        background-image: url('../../../public/assets/images/textura.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         display: flex;
         flex-direction: column;
-        background-color: #1C1C1C;
+        background-color: #262626;
         align-items: center;
         gap: 130px;
         padding: 10vh;
@@ -62,6 +62,7 @@
             display: none;
         }
 
+
          .adstitle{
             position: absolute;
             color: #000;
@@ -102,9 +103,9 @@
     }
 
      .secao2{
+        background-color: #262626;
         display: flex;
         flex-direction: row;
-        background-image: url('../../../public/assets/images/textura.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -143,12 +144,18 @@
 
             .opcoes{
                 display: flex;
+                position: relative;
                 flex-direction: column;
                 gap: 30px;
                 padding-left: 2vw;
 
                 h3{
                     font: 600 30px 'Arial';
+                    width: 16vw;
+ 
+                .seta{
+                    float: right;
+                }
                 }
 
                 hr{
@@ -190,6 +197,11 @@
                 color: #fff;
                 font: 600 24px 'Arial';
                 width: 22vw;
+
+            span{
+                color: #3AC9E3;
+                text-decoration: underline;
+                }
                
             }
          }
@@ -231,11 +243,17 @@
                 font: 600 24px 'Arial';
                 width: 22vw;
             }
+        
             .link{
              color: #A3A3A3;
              font-size: 26px;
              font-weight: bold;
              text-decoration: underline;
+
+             .seta{
+                width: 26px;
+                height: 20px;
+             }
             }
        }
            .tecnica{
@@ -248,28 +266,53 @@
 
         background: linear-gradient(to bottom left, #1A1D24, #2A313D );
         display: flex;
+        flex-direction: column;
         justify-content: center;
         height: 80vh;
         padding-top: 10vh;
         
-
-       .avaliacoes{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding-right: 20vw;  
-
-
         hr{
             width: 50vw;
         }
 
         h1{
           font: 600 42px 'Arial';
-          width: 25vw;;
+          width: 25vw;
           color: #fff;     
         }
-     }
+
+       #avaliacoes{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-right: 20vw;  
+         
+       .avaliacao{
+        display: flex;
+        flex-direction: row;
+
+        img{
+            width: 30px;
+            border-radius: 15px;
+        }
+ 
+        .nome-curso{
+            h2{
+                font: 600 20px 'Arial';
+                color: #fff;
+            }
+            h3{
+                font: 600 10px 'Arial';
+                color: #fff;
+            } 
+         }
+
+         p{
+            font: 600 14px 'Arial';
+            display: none;
+         }
+       } 
+      }
     }
 
      .secao4-part2{
@@ -312,6 +355,8 @@
         .grad-pos{
           display: flex;
           gap: 8.2vw;
+
+          
        
           .grad{
             font: 500 25px 'Inter';
@@ -346,19 +391,19 @@
 
     //resposividade
 
-  @media (max-width: 1024px){
+  @media screen and (max-width: 1024px){
        .landing-page{
         width: 100vw;
        }
     }
 
-    @media (max-width: 768px){
+    @media screen and (max-width: 768px){
        .landing-page{
         width: 100vw;
        }
     }
 
-      @media (max-width: 480px){
+      @media screen and (max-width: 480px){
        .landing-page{
         width: 100vw;
        }

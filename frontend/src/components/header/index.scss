@@ -13,7 +13,11 @@
             flex-direction: row;
             justify-content: space-around;
             height: 16vh;
-
+          
+            #lupa{
+                margin-left: 10px;
+                width: 32px;
+            }
 
             img{
                 width: 430px;
@@ -72,5 +76,4 @@
                 color: #76C3A4;
             }
         }
-
 }

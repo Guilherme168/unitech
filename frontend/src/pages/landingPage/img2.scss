@@ -17,6 +17,7 @@
         margin-left: 16vh;
         gap: 30px;
 
+      
         .container{
             display: flex;
             flex-direction: column;
@@ -49,6 +50,10 @@
             color: #3DE8C6;
             width: 31vw;
             font-weight: 600;
+        .seta{
+            width: 15px;
+            color: #fff;
+            }
         }
      }
 

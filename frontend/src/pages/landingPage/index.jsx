@@ -5,6 +5,12 @@ import Carousel from '../../components/carrossel';
 import LandingSecao1 from './img1';
 import LandingSecao2 from './img2';
 import LandingSecao3 from './img3';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+library.add(fab, far, fas);
 
 function LandingPage() {
   return (
@@ -29,7 +35,6 @@ function LandingPage() {
 
         <img className='ads' src='/assets/images/ads.jpg'/>
         <h2 className='adstitle'> Análise e Desenvolvimento de Sistemas </h2> 
-
 
         <img className='redes' src='/assets/images/redes_servidores.jpg'/>
         <h2 className='redestitle'> Redes e Servidores </h2> 
@@ -62,11 +67,11 @@ function LandingPage() {
 
      <div className='opcoes'> 
  
-    <h3> PRESENCIAL </h3>
+    <h3> PRESENCIAL <FontAwesomeIcon icon="fa-solid fa-arrow-right" className='seta'/> </h3>
     <hr/>
-    <h3> EAD </h3>
+    <h3> EAD <FontAwesomeIcon icon="fa-solid fa-arrow-right" className='seta'/> </h3>
     <hr/>
-    <h3> HÍBRIDO</h3>
+    <h3> HÍBRIDO <FontAwesomeIcon icon="fa-solid fa-arrow-right" className='seta'/> </h3>
     <hr/>
 
      </div>
@@ -78,7 +83,7 @@ function LandingPage() {
     <section className='secao3-Graduados'> 
        <div className='texto'> 
         <h1> Já são mais de 50.000 profissionais formados por nós em todo o país! </h1> 
-        <p> Venha fazer parte dessa história. Faça já sua inscrição aqui. </p>
+        <p> Venha fazer parte dessa história. Faça já sua <span> inscrição aqui.</span> </p>
        </div>
 
        <img className='graduanda' src='/assets/images/graduanda.png'/>
@@ -91,7 +96,7 @@ function LandingPage() {
         <h1> Mais de 10.000 técnicos formados em 2024! </h1> 
         <p> Se interessou? Dê uma olhada em nossos cursos técnicos e profissionalizantes no link abaixo: </p>
 
-       <p className='link'> Ver cursos </p>
+       <p className='link'> Ver cursos <FontAwesomeIcon icon="fa-solid fa-chevron-right" className='seta'/> </p>
 
        </div>
        <img className='tecnica' src='/assets/images/tecnicaa.png'/>
@@ -99,10 +104,43 @@ function LandingPage() {
 
     <section className='secao4-Avaliacoes'> 
 
-       <div className='avaliacoes'> 
-
        <h1>Realizando sonhos por todo o país há 20 anos</h1>
        <hr/>
+
+        <div id='avaliacoes'> 
+
+          <div className='avaliacao'>
+
+            <img src='/assets/images/mulher1.png'/>
+                <div className='nome-curso'>  
+                  <h2> Ana Paula </h2>
+                  <h3> Análise e Desenvolvimento de Sistemas </h3>
+                </div>
+
+            <p className='textoAna'>  Estou extremamente satisfeita com minha experiência no curso de Análise e Desenvolvimento de Sistemas. Desde o início, pude perceber o quanto a grade curricular é bem estruturada e voltada para as demandas reais do mercado de trabalho. As disciplinas abordam desde fundamentos da lógica de programação até tópicos mais avançados, como banco de dados, segurança da informação e desenvolvimento web e mobile. </p>    
+          </div>
+
+          <div className='avaliacao'>
+
+            <img src='/assets/images/mulher2.png'/>
+                <div className='nome-curso'>  
+                  <h2> Valéria Oliveira </h2>
+                  <h3> Banco de Dados </h3>
+                </div>
+
+            <p className='textoValeria'>  O curso de Banco de Dados superou minhas expectativas! Aprendi a modelar, criar e gerenciar bancos com segurança e eficiência. Os conteúdos são claros e bem aplicados na prática. Com certeza, saio muito mais preparada para o mercado de trabalho. </p>    
+          </div>
+
+           <div className='avaliacao'>
+
+            <img src='/assets/images/cara-sorridente.jpg'/>
+                <div className='nome-curso'>  
+                  <h2> Wagner Santos </h2>
+                  <h3> Análise e Desenvolvimento de Sistemas </h3>
+                </div>
+
+            <p className='textoWagner'>  O curso de Redes e Servidores superou minhas expectativas, proporcionando uma base sólida em conceitos teóricos e práticos.  As atividades práticas foram especialmente valiosas, permitindo aplicar o conhecimento em situações reais. Senti que as aulas foram dinâmicas e envolventes, promovendo um ambiente colaborativo. Estou animado para aplicar o que aprendi em minha carreira futura! </p>    
+          </div>
 
        </div>
 
@@ -118,13 +156,13 @@ function LandingPage() {
           <h1> Se interessou? Por que não dar uma olhada em nossos cursos? </h1>
    
           <div className='grad-pos'>
-            <p className='grad'> Graduação </p>
-            <p className='pos'> Pós-Graduação </p>
+            <p className='grad'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right"/> Graduação </p>
+            <p className='pos'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /> Pós-Graduação </p>
           </div>
 
           <div className='tec-livre'>
-            <p className='tec'> Técnico </p>
-            <p className='livre'> Livre </p>
+            <p className='tec'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /> Técnico </p>
+            <p className='livre'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /> Livre </p>
           </div>
 
         </div>
