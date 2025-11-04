@@ -1,7 +1,8 @@
 import './index.scss';
+import { Link } from 'react-router-dom';
 import Cabecalho from '../../components/header';
 import Footer from '../../components/footer';
-import Faq from '../../components/faq';
+import Faq from '../../components/faq/graduacao';
 
 function Graduacao() {
   return (
@@ -13,7 +14,7 @@ function Graduacao() {
     <main> 
 
     <div className='caminho'>
-    <h3> Home </h3>
+    <Link to = {'/'} > <h3> Home </h3> </Link>
     <hr/>
     <h3> Graduação </h3>
     </div>    

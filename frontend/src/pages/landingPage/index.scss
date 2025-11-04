@@ -6,12 +6,8 @@
 
 
     .secao1{
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         display: flex;
         flex-direction: column;
-        background-color: #262626;
         align-items: center;
         gap: 130px;
         padding: 10vh;
@@ -22,31 +18,6 @@
        max-width: 34vw;
     }
 
-      .bdtext{
-            p{
-                background-color: #242424;
-                border-radius: 30px;
-                display: none;
-
-            }
-        }
-
-        .adstext{
-            p{
-                background-color: #242424;
-                border-radius: 30px;
-                display: none;
-            }
-        }
-
-        .redestext{
-            p{
-                background-color: #242424;
-                border-radius: 30px;
-                display: none;
-            }
-        }
-
 
     .carrossel-cursos{
         display: flex;
@@ -55,8 +26,8 @@
 
         .bdtitle{
             position: absolute;
-            color: #000;
-            top: 197%;
+            color: #ffffff;
+            top: 200%;
             left: 25%;
             font: 600 24px 'Inter';
             display: none;
@@ -67,7 +38,7 @@
             position: absolute;
             color: #000;
             top: 197%;
-            left: 25%;
+            left: 44%;
             font: 600 24px 'Inter';
             display: none;
         }
@@ -75,8 +46,8 @@
          .redestitle{
             position: absolute;
             color: #000;
-            top: 197%;
-            left: 25%;
+            top: 200%;
+            left: 65%;
             font: 600 24px 'Inter';
             display: none;
         }
@@ -84,15 +55,29 @@
         .bd:hover{
              width: 14vw;
              height: 50vh;
+             filter: opacity(70%);
+        }
+        .bd:hover + .bdtitle{
+            display: block;
         }
 
        .ads:hover{
              width: 14vw;
              height: 50vh;
+             filter: opacity(70%);
         }
+
+        .ads:hover + .adstitle{
+            display: block;
+        }
+
        .redes:hover{
              width: 14vw;
              height: 50vh;
+             filter: opacity(60%);
+        }
+        .redes:hover + .redestitle{
+            display: block;
         }
         img{
             border-radius: 20px;
@@ -100,10 +85,24 @@
             height: 47vh;
         }
     }
+
+     .bdtext{
+        display: none;
+        background-color: #000;
+        }
+
+        .adstext{
+           display: none;
+           background-color: #000;
+        }
+
+        .redestext{
+             display: none;
+             background-color: #000;
+        }
     }
 
      .secao2{
-        background-color: #262626;
         display: flex;
         flex-direction: row;
         background-size: cover;
@@ -122,9 +121,9 @@
        }
 
        .img-sec2{
-        position: absolute;
-        left: 15%;
-        top: 262%;
+        position: relative;
+        left: -22%;
+        margin-top: 5vh;
         width: 25vw;
         height: 70vh;
         border-radius: 34px;
@@ -133,9 +132,10 @@
        .modalidades{
             display: flex;
             flex-direction: column;
-            padding-left: 15vw;
-            padding-top: 4vh;
+            position: relative;
             gap: 15vh;
+            padding-top: 65px;
+            right: 13%;
 
             h1{
                 font: 600 46px "Arial";
@@ -266,52 +266,69 @@
 
         background: linear-gradient(to bottom left, #1A1D24, #2A313D );
         display: flex;
+        justify-content: flex-start;
         flex-direction: column;
-        justify-content: center;
-        height: 80vh;
-        padding-top: 10vh;
-        
+        padding: 15vh;
+        gap: 25px;
+
         hr{
-            width: 50vw;
+            width: 80vw;
         }
 
         h1{
-          font: 600 42px 'Arial';
-          width: 25vw;
+          font: 600 50px 'Arial';
+          width: 29vw;
           color: #fff;     
         }
 
        #avaliacoes{
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        padding-right: 20vw;  
          
        .avaliacao{
         display: flex;
         flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        padding-top: 50px;
 
         img{
-            width: 30px;
-            border-radius: 15px;
+            width: 15em;
+            border-radius: 10px;
+        }
+
+        p{
+        font: 600 22px 'Arial';
+        width: 40vw;
+        background-color: #3e4653;
+        padding: 15px;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 1s ease;
         }
  
+        img:hover{
+         width: 18em;
+        }
+
+        img:hover + .nome-curso + p{
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(60px);
+        }
+
         .nome-curso{
             h2{
-                font: 600 20px 'Arial';
+                font: 600 32px 'Arial';
                 color: #fff;
             }
             h3{
-                font: 600 10px 'Arial';
-                color: #fff;
+                font: 600 20px 'Arial';
+                color: #C7C7C7;
             } 
          }
-
-         p{
-            font: 600 14px 'Arial';
-            display: none;
-         }
-       } 
+       }
       }
     }
 
@@ -319,7 +336,6 @@
 
        display: flex;
        flex-direction: row;
-       background-color: #000;
        padding-top: 3vh;
        padding-bottom: 3vh;
        align-items: center;

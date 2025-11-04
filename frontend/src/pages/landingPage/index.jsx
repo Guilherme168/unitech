@@ -5,6 +5,7 @@ import Carousel from '../../components/carrossel';
 import LandingSecao1 from './img1';
 import LandingSecao2 from './img2';
 import LandingSecao3 from './img3';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -34,7 +35,7 @@ function LandingPage() {
         <h2 className='bdtitle'> Banco de Dados </h2> 
 
         <img className='ads' src='/assets/images/ads.jpg'/>
-        <h2 className='adstitle'> Análise e Desenvolvimento de Sistemas </h2> 
+        <h2 className='adstitle'> Análise <br/> e Desenvolvimento de Sistemas </h2> 
 
         <img className='redes' src='/assets/images/redes_servidores.jpg'/>
         <h2 className='redestitle'> Redes e Servidores </h2> 
@@ -111,35 +112,38 @@ function LandingPage() {
 
           <div className='avaliacao'>
 
-            <img src='/assets/images/mulher1.png'/>
+            <img src='/assets/images/mulher1.jpg'/>
                 <div className='nome-curso'>  
-                  <h2> Ana Paula </h2>
-                  <h3> Análise e Desenvolvimento de Sistemas </h3>
+                  <h2> Ana Paula <FontAwesomeIcon icon="fa-solid fa-thumbs-up" /> </h2>
+                  <h3> Análise e <br/> Desenvolvimento <br/>de Sistemas </h3>
                 </div>
 
-            <p className='textoAna'>  Estou extremamente satisfeita com minha experiência no curso de Análise e Desenvolvimento de Sistemas. Desde o início, pude perceber o quanto a grade curricular é bem estruturada e voltada para as demandas reais do mercado de trabalho. As disciplinas abordam desde fundamentos da lógica de programação até tópicos mais avançados, como banco de dados, segurança da informação e desenvolvimento web e mobile. </p>    
+            <p>  " Estou extremamente satisfeita com minha experiência no curso de Análise e Desenvolvimento de Sistemas. Desde o início, pude perceber o quanto a grade curricular é bem estruturada e voltada para as demandas reais do mercado de trabalho. As disciplinas abordam desde fundamentos da lógica de programação até tópicos mais avançados, como banco de dados, segurança da informação e desenvolvimento web e mobile. " </p>    
           </div>
+
 
           <div className='avaliacao'>
 
-            <img src='/assets/images/mulher2.png'/>
+            <img src='/assets/images/mulher2.jpg'/>
                 <div className='nome-curso'>  
-                  <h2> Valéria Oliveira </h2>
+                  <h2> Valéria Oliveira <FontAwesomeIcon icon="fa-solid fa-thumbs-up" /> </h2>
                   <h3> Banco de Dados </h3>
                 </div>
 
-            <p className='textoValeria'>  O curso de Banco de Dados superou minhas expectativas! Aprendi a modelar, criar e gerenciar bancos com segurança e eficiência. Os conteúdos são claros e bem aplicados na prática. Com certeza, saio muito mais preparada para o mercado de trabalho. </p>    
+            <p>  " O curso de Banco de Dados superou minhas expectativas! Aprendi a modelar, criar e gerenciar bancos com segurança e eficiência. Os conteúdos são claros e bem aplicados na prática. Com certeza, saio muito mais preparada para o mercado de trabalho. " </p>    
           </div>
+
 
            <div className='avaliacao'>
 
             <img src='/assets/images/cara-sorridente.jpg'/>
                 <div className='nome-curso'>  
-                  <h2> Wagner Santos </h2>
-                  <h3> Análise e Desenvolvimento de Sistemas </h3>
+                  <h2> Wagner Santos <FontAwesomeIcon icon="fa-solid fa-thumbs-up" /> </h2>
+                  <h3> Redes e Servidores </h3>
                 </div>
 
-            <p className='textoWagner'>  O curso de Redes e Servidores superou minhas expectativas, proporcionando uma base sólida em conceitos teóricos e práticos.  As atividades práticas foram especialmente valiosas, permitindo aplicar o conhecimento em situações reais. Senti que as aulas foram dinâmicas e envolventes, promovendo um ambiente colaborativo. Estou animado para aplicar o que aprendi em minha carreira futura! </p>    
+            <p>  " O curso de Redes e Servidores superou minhas expectativas, proporcionando uma base sólida em conceitos teóricos e práticos.  As atividades práticas foram especialmente valiosas, permitindo aplicar o conhecimento em situações reais. Senti que as aulas foram dinâmicas e envolventes, promovendo um ambiente colaborativo. Estou animado para aplicar o que aprendi em minha carreira futura! " </p>    
+
           </div>
 
        </div>
@@ -156,13 +160,13 @@ function LandingPage() {
           <h1> Se interessou? Por que não dar uma olhada em nossos cursos? </h1>
    
           <div className='grad-pos'>
-            <p className='grad'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right"/> Graduação </p>
-            <p className='pos'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /> Pós-Graduação </p>
+            <Link to = {'/graduação'}>   <p className='grad'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right"/> Graduação </p> </Link>  
+            <Link to ={'/pós-graduação'}> <p className='pos'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /> Pós-Graduação </p> </Link>
           </div>
 
           <div className='tec-livre'>
-            <p className='tec'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /> Técnico </p>
-            <p className='livre'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /> Livre </p>
+           <Link to ={'/tecnico'}>  <p className='tec'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /> Técnico </p> </Link>
+           <Link to = {'/livre'}>  <p className='livre'> <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /> Livre </p> </Link> 
           </div>
 
         </div>

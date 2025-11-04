@@ -1,6 +1,6 @@
 import './index.scss';
 
-export default function Faq (){
+export default function FaqG (){
 
 return(
  <div id='container'>

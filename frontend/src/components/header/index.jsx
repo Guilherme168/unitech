@@ -1,4 +1,5 @@
 import './index.scss'
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +17,7 @@ return(
    <div className='superior'>
 
        <button className='contato'> ENTRE EM CONTATO </button>
-       <img src='/assets/images/logo.png'/> 
+       <Link to = {'/'}> <img src='/assets/images/logo.png'/> </Link>
        <div className='pesquisa'>
        <input type='text' placeholder='Busque um curso especifico'/> 
        <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" id='lupa'/>
@@ -28,10 +29,10 @@ return(
 
    <div className='inferior'> 
 
-   <h2> <FontAwesomeIcon icon="fa-solid fa-book" /> Graduação </h2>
-   <h2> <FontAwesomeIcon icon="fa-solid fa-book-open" /> Pós-Graduação </h2>
-   <h2> <FontAwesomeIcon icon="fa-solid fa-clipboard" /> Cursos Técnicos </h2>
-   <h2> <FontAwesomeIcon icon="fa-regular fa-clock" /> Cursos Livres </h2>
+   <Link to = {'/graduação'}> <h2> <FontAwesomeIcon icon="fa-solid fa-book" /> Graduação </h2> </Link> 
+   <Link to = {'/pós-graduação'}> <h2> <FontAwesomeIcon icon="fa-solid fa-book-open" /> Pós-Graduação </h2> </Link>
+   <Link to = {'/técnico'}> <h2> <FontAwesomeIcon icon="fa-solid fa-clipboard" /> Cursos Técnicos </h2> </Link> 
+   <Link to = {'/livre'}> <h2> <FontAwesomeIcon icon="fa-regular fa-clock" /> Cursos Livres </h2> </Link> 
    <h2> <FontAwesomeIcon icon="fa-solid fa-money-bill" /> Bolsas </h2>
 
    </div>
