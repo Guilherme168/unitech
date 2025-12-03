@@ -4,6 +4,8 @@ import Graduacao from "./pages/graduacao";
 import PosGraduacao from "./pages/pos-graduacao";
 import Tecnico from "./pages/tecnico";
 import Livre from "./pages/livre";
+import Inscricao from "./pages/inscricao";
+import Bolsa from "./pages/bolsas";
 
 export default function Navegacao(){
     return(
@@ -16,8 +18,9 @@ export default function Navegacao(){
        <Route path='/pós-graduação' element={<PosGraduacao/>}></Route>
        <Route path='/técnico' element={<Tecnico/>}></Route>
        <Route path='/livre' element={<Livre/>}></Route>
-
-
+       <Route path='/inscricao' element={<Inscricao/>}></Route>
+       <Route path='/bolsa' element={<Bolsa/>}></Route>
+       
        </Routes>
 
        </BrowserRouter>

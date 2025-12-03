@@ -33,7 +33,7 @@ return(
    <Link to = {'/pós-graduação'}> <h2> <FontAwesomeIcon icon="fa-solid fa-book-open" /> Pós-Graduação </h2> </Link>
    <Link to = {'/técnico'}> <h2> <FontAwesomeIcon icon="fa-solid fa-clipboard" /> Cursos Técnicos </h2> </Link> 
    <Link to = {'/livre'}> <h2> <FontAwesomeIcon icon="fa-regular fa-clock" /> Cursos Livres </h2> </Link> 
-   <h2> <FontAwesomeIcon icon="fa-solid fa-money-bill" /> Bolsas </h2>
+   <Link to = {'/bolsa'}> <h2> <FontAwesomeIcon icon="fa-solid fa-money-bill" /> Bolsas </h2> </Link>  
 
    </div>
     
