@@ -25,7 +25,7 @@ return(
 
    <div className='coluna2'>
    <h2> VESTIBULAR E BOLSAS </h2>
-   <p> FAÇA SUA INSCRIÇÃO </p>
+   <Link to={'/inscricao'}> <p> FAÇA SUA INSCRIÇÃO </p> </Link> 
    <p> BOLSAS E FINANCIAMENTOS </p>
    </div>
 

@@ -1,2 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inscricao{
+
+.caminho{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  padding-left: 13.5vw;
+  background-color: #000;
+
+  h3{
+    color: #ffffff;
+    text-decoration: underline;
+    font: 500 20px 'Inter';
+  }
+
+  hr{
+    width: 30px;
+    height: 1px;
+  }
+}
+
+#pag-inscricao{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    gap: 40px;
+
+    h1{
+        font: 600 48px 'Inter';
+        color: #ffffff;
+    }
+    p{
+        font: 400 30px 'Inter';
+        color: #ffffff;
+        width: 60vw;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        background-color: #23242b;
+        padding: 40px;
+        margin-top: 45px;
+        gap: 50px;
+        border-radius: 17px;
+        width: 60vw;
+        height: 100vh;
+        
+        .selectCurso{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            padding: 15px;
+            label{
+                font: 500 20px 'Inter';
+                color: #ffffff;
+            }
+            select{
+                width: 15vw;
+                border: none;
+                border-radius: 15px;
+                padding: 5px;
+                
+            }
+        }
+
+           button{
+             width: 5vw;
+             font: 400 24px 'Inter';
+             color: #ffffff;
+             background: none;
+             border: none;
+            }
+            button:hover{
+              background: #242944;
+              border-radius: 10px;
+              padding: 5px;
+            }
+         p{
+                font: 500 25px 'Inter';
+                width: 56vw;
+                padding: 10px;
+            }
+           
+
+
+        h2{
+            font: 600 35px 'Inter';
+            color: #ffffff;
+            text-align: center;
+        }
+
+        #corpoForm{
+            display: flex;
+            justify-content: space-evenly;
+            
+            align-items: center;
+            gap: 15px;
+
+            label{
+                font: 500 20px 'Inter';
+                color: #ffffff;
+            }
+            input{
+                width: 15vw;
+                border: none;
+                border-radius: 15px;
+                padding: 5px;
+                background-color: #ffffff;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .labelInput{
+                display: flex;
+                flex-direction: column;
+                           }
+            }
+
+            
+        }
+    }
+
+}
+
+}

@@ -1,5 +1,6 @@
 import './img2.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
@@ -19,7 +20,7 @@ function LandingSecao2() {
         </div>
 
        <h1> Inscrições estão abertas! </h1>
-       <p> <FontAwesomeIcon icon="fa-solid fa-chevron-right" className='seta' /> Inscreva-se já aqui </p>
+      <Link to={'/inscricao'}> <p> <FontAwesomeIcon icon="fa-solid fa-chevron-right" className='seta' /> Inscreva-se já aqui </p> </Link> 
       </div>
        
        <img className='g' src='/assets/images/img-sec0-1.jpg'/>

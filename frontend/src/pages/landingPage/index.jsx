@@ -84,7 +84,7 @@ function LandingPage() {
     <section className='secao3-Graduados'> 
        <div className='texto'> 
         <h1> Já são mais de 50.000 profissionais formados por nós em todo o país! </h1> 
-        <p> Venha fazer parte dessa história. Faça já sua <span> inscrição aqui.</span> </p>
+        <p> Venha fazer parte dessa história. Faça já sua <Link to={'/inscricao'}> <span> inscrição aqui.</span> </Link> </p>
        </div>
 
        <img className='graduanda' src='/assets/images/graduanda.png'/>
