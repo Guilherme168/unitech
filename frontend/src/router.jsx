@@ -6,6 +6,7 @@ import Tecnico from "./pages/tecnico";
 import Livre from "./pages/livre";
 import Inscricao from "./pages/inscricao";
 import Bolsa from "./pages/bolsas";
+import InscricaoBolsa from "./pages/bolsas/inscricao";
 
 export default function Navegacao(){
     return(
@@ -20,7 +21,9 @@ export default function Navegacao(){
        <Route path='/livre' element={<Livre/>}></Route>
        <Route path='/inscricao' element={<Inscricao/>}></Route>
        <Route path='/bolsa' element={<Bolsa/>}></Route>
+       <Route path='/inscricaoBolsa' element={<InscricaoBolsa/>}></Route>
        
+
        </Routes>
 
        </BrowserRouter>
